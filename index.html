@@ -3,103 +3,124 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>A-Philes Studio</title>
+		<link rel="stylesheet" type="text/css" href="wsd.css">
+		<link href='http://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<header>
-			<img src="images/aPhilesLogoBlack.png" alt="A-Philes Studio Logo">
+			<img src="images/aPhilesLogoCircle.png" alt="A-Philes Studio Logo" width="40" height="40">
 			<h1>A-Philes Studio</h1>
-			<nav>
 				<ul>
 					<li><a href="#bio">Who are we?</a></li>
 					<li><a href="#benefits">What can we do for you?</a></li>
-					<li><a href="#facilities">Studios</a></li>
+					<li><a href="#facilities">Facilities</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
-			</nav>
 		</header>
 		
 		<div id="splashImage">
-			<h1>Making your music shine!</h1>
-			<p id="cta">
-				<a href="#contact">Let us help YOU shine!</a>
-			</p>
+			<h1>"Making your music shine!"</h1>
+				<a href="#contact" class="cta button orange">Let us help YOU shine!</a>
+
 		</div>
 		
+	<div id="wrapper">		
 		<article>
-			<h2><a id="bio">Who are we?</a></h2>
+			<h2 id="bio">Who are we?</h2>
 			<p>A-Philes Studio is a professional recording studio with its home base in Miami, Florida. As the name implies we are big audiophiles around here and we made sure that our studios reflected that. We strive to help our customers get that <strong>"sound"</strong> that they are looking for. Check out below why should come on over.</p>
 			
-			<h2><a id="benefits">What can we do for you?</a></h2>
+			<h2 id="benefits">What can we do for you?</h2>
+			<div class="columns">
 			<p>As most people in the music industry know, having your own studio nowadays is not that all expensive. So the question is posed: do we really need recording studios anymore? We say <strong>YES!</strong> and for several reasons, let us explain. </p>
 			<p>Acoustics are a big part of getting a professional, polished sound. Without proper acoustic treatment you cannot capture nor hear what is really being played. So many times we've had customers come and say how their mixes sound muddy or lack bass. It's not their fault, or to some extent, the problem lies in that they can't hear what's going on because of acoustic problems in their rooms.</p>
 			<p>Equipment is another big part of the equation. We keep and arsenal of microphones because we know how they each provide their own character and sound. Our studio has two distinctly different rooms. In Studio A we have a classic analog console with a magnetic tape machine hooked up to Pro Tools HD for some warm fuzzy sound and big booth so you can fit the whole band. In Studio B we have a smaller digital console which is just as powerful as our big analog console with a small vocal booth. They each have their own distinct personalities and provide something for everyone.</p>
 			<p> Enough talk, let us show you around.</p>
+			</div>
 		</article>
 		
-		<div id="facilites">
-			<h2><a id="facilities">Studios</a></h2>
+		<div id="facilities">
+			<h2>Facilities</h2>
+			<ul class="facilitiesPics">
+				<li>
 				<a href="images/studioA.jpg">
 				<img src="images/studioA_thumbnail.jpg" alt="Studio A Thumbnail"></a>
+				</li>
+				<li>
 				<a href="images/studioB.jpg">
 				<img src="images/studioB_thumbnail.jpg" alt="Studio B Thumbnail"></a>
+				</li>
+				<li>
 				<a href="images/console.jpg">
-				<img src="images/console_thumbnail.jpg" alt="Console Thumbnail"></a>
-				<a href="images/c24UpClose.jpg">
-				<img src="images/c24UpClose_thumbnail.jpg" alt="24 C Console Thumbnail"></a>
+				<img src="images/console_thumbnail.jpg" alt="Trident Console Thumbnail"></a>
+				</li>
+				<li>
 				<a href="images/microphones.jpg">
 				<img src="images/microphones_thumbnail.jpg" alt="Microphones Thumbnail"></a>
-			
+				</li>
+			</ul>		
 		</div>
 		
-		<section>
+		<section id="equipment">
 			<h3>Sample of Equipment</h3>
 			<table>
 				<tr>
 					<th>Consoles</th>
 					<th></th>
+					<th></th>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Avid C|24</td>
+					<td></td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Trident TSM Console</td>
+					<td></td>
 				</tr>
 				<tr>
 					<th>Microphones</th>
+					<th></th>
 					<th></th>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Telefunken U87</td>
+					<td>Neumann U87</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Shure SM57</td>
+					<td>Rode NT1-A</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Shure SM58</td>
+					<td>AKG C 214</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td>Blue</td>
+					<td>Blue Bluebird</td>
+					<td>Blue Baby Bottle</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Audio-Technica 4040</td>
+					<td>Audio-Technica 2020</td>
 				</tr>
 			</table>
 		</section>
 		
+		<div class="clear"></div>
+		
 		<footer>
-			<h2><a id="contact">Let's Jam! Contact Us!</a></h2>
+			<h2 id="contact">Let's Jam! Contact Us!</h2>
 			<ul>
 				<li>Phone: 305-555-5555</li>
 				<li>Fax: 305-555-5556</li>
 				<li>E-Mail: jam@a-philes.com</li>
 			</ul>
 		</footer>
+	</div>
 	</body>
 </html>
