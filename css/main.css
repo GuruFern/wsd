@@ -83,7 +83,7 @@ header a:hover {
 #splashImage a {
 	text-decoration: none;
 	color: white;
-	font-family: 1.4em/100px 'Yeseva One', cursive;
+	font: 1.4em/100px 'Yeseva One', cursive;
 	text-transform: uppercase;
 }
 
