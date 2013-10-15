@@ -2,7 +2,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: url('images/binding_dark.png') repeat;
+	background: url('../images/binding_dark.png') repeat;
 	color: #fff;
 }
 
@@ -23,8 +23,7 @@ header {
 
 header img {
 	float: left;
-	margin-left: 15px;
-	margin-top: 4px;
+	margin: 4px 0px 0px 15px;
 }
 
 header h1 {
@@ -40,8 +39,7 @@ header ul {
 }
 
 header ul li {
-	font-family: 'Yeseva One' , cursive;
-	font-size: 1em;
+	font: 1em 'Yeseva One', cursive;
 	float: left;
 }
 
@@ -50,8 +48,7 @@ header a {
 	display: block;
 	height: 50px;
 	line-height: 50px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 0px 20px 0px 20px;
 	color: #fff;
 }
 
@@ -62,7 +59,7 @@ header a:hover {
 #splashImage {
 	width: 100%;
 	clear: both;
-	background: url(images/c24UpClosev3.jpg) no-repeat;
+	background: url(../images/c24UpClosev3.jpg) no-repeat;
 	height: 608px;
 	margin-top: 30px;
 }
@@ -70,11 +67,9 @@ header a:hover {
 #splashImage h1 {
 	color: #fff;
 	text-shadow: 2px 2px #2F4F4F;
-	font-family: 'Yeseva One' , cursive;
-	font-size: 3.5em;
+	font: 3.5em 'Yeseva One', cursive;
 	float: right;
-	padding-top: 50px;
-	padding-right: 50px;
+	padding: 50px 50px 0px 0px;
 }
 
 .cta  {
@@ -82,16 +77,13 @@ header a:hover {
 	float: right;
 	width: 300px;
 	height: 100px;
-	margin-top: 50px;
-	margin-right: 100px;
+	margin: 50px 100px 0px 0px;
 }
 
 #splashImage a {
 	text-decoration: none;
 	color: white;
-	font-family: 'Yeseva One' , cursive;
-	font-size: 1.4em;
-	line-height: 100px;
+	font-family: 1.4em/100px 'Yeseva One', cursive;
 	text-transform: uppercase;
 }
 
@@ -104,11 +96,7 @@ header a:hover {
 	font: 14px/100% Arial, Helvetica, sans-serif;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em; 
-	-moz-border-radius: .5em;
 	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
 
@@ -166,8 +154,7 @@ article h2 {
 }
 
 article p {
-	font-size: 1.2em;
-	line-height: 1.3em;
+	font: 1.2em/1.3em;
 }
 
 #facilities {
@@ -188,9 +175,7 @@ article p {
 
 #equipment {
 	float: left;
-	margin-top: 30px;
-	margin-left: 90px;
-	
+	margin: 30px 0px 0px 90px;
 }
 
 table {
@@ -207,8 +192,7 @@ td {
 
 footer {
 	clear: both;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 40px 0px 40px 0px;
 }
 
 footer ul {
