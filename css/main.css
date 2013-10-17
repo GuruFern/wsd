@@ -228,7 +228,7 @@ footer ul li {
 
 /*--------------------------------Media Queries---------------------------*/
 
-	@media only screen and (min-width: 768px) and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5){
+	@media only screen and (min-width: 768px) and (max-width: 1280px){
 		header h1 {
 			font-size: 1.25em;
 		}
@@ -256,7 +256,6 @@ footer ul li {
 		
 		#wrapper {
 			font-size: 1.05em;
-			-webkit-text-size-adjust: 100%;
 		}
 		
 		article .columns {
@@ -324,6 +323,7 @@ footer ul li {
 			float: none;
 			display: block;
 			margin-bottom: 50px;
+			font: 1em 'Yeseva One', cursive;
 			text-align: center;
 			background: #538018;
 			background: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 157, 40, 1)), to(rgba(67, 107, 12, 1)));
