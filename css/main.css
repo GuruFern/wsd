@@ -1,3 +1,7 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
 
 body {
 	margin: 0px;
@@ -13,12 +17,10 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 header {
-	width: 960px;
-	height: 50px;
-	margin: 10px auto 0px auto;
+	width: 90%;
+	margin: .625em auto .625em auto;
 	padding: 0px;
 	color: #fff;
-	overflow: hidden;
 }
 
 header img {
@@ -31,6 +33,7 @@ header h1 {
 	height: 50px;
 	line-height: 50px;
 	margin-left: 15px;
+	font-size: 1.4em;
 }
 
 header ul {
@@ -60,14 +63,14 @@ header a:hover {
 	width: 100%;
 	clear: both;
 	background: url(../images/c24UpClosev3.jpg) no-repeat;
-	height: 608px;
+	height: 399px;
 	margin-top: 30px;
 }
 
 #splashImage h1 {
 	color: #fff;
 	text-shadow: 2px 2px #2F4F4F;
-	font: 3.5em 'Yeseva One', cursive;
+	font: 2.5em 'Yeseva One', cursive;
 	float: right;
 	padding: 50px 50px 0px 0px;
 }
@@ -76,14 +79,14 @@ header a:hover {
 	clear: right;
 	float: right;
 	width: 300px;
-	height: 100px;
+	height: 4em;
 	margin: 50px 100px 0px 0px;
 }
 
 #splashImage a {
 	text-decoration: none;
 	color: white;
-	font: 1.4em/100px 'Yeseva One', cursive;
+	font: 1.1em/4em 'Yeseva One', cursive;
 	text-transform: uppercase;
 }
 
@@ -131,22 +134,14 @@ header a:hover {
 
 #wrapper {
 	clear: both;
-	width: 960px;
+	width: 80%;
 	margin: 0px auto;
+	font-size: 1.25em;
 }
 
 article {
 	width: 100%;
-	border-radius: 25px;
-	margin-top: 40px;
-	padding: 25px;
-	column-count: 3;
-	-moz-column-count: 3;
-	-webkit-column-count: 3;
-	column-gap: 25px;
-	-moz-column-gap: 25px;
-	-webkit-column-gap: 25px;
-	background-color: rgba(247, 141, 29, .65);
+	margin-top: 2.5em;
 }
 
 article h2 {
@@ -154,45 +149,70 @@ article h2 {
 }
 
 article p {
-	font: 1.2em/1.3em;
+	line-height: 1.3em;
+	text-align: justify;
 }
 
-#facilities {
-	margin-top: 40px;
+.who {
+	background: #538018;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 157, 40, .7)), to(rgba(67, 107, 12, .7)));
+	background: -moz-linear-gradient(top,  rgba(107, 157, 40, .7),  rgba(67, 107, 12, .7));
+	border-radius: 1.5625em;
+	padding: 1.25em;
+}
+
+.columns {
+	margin-top: 3em;
+	column-count: 3;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-gap: 20px;
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+}
+
+table.facilitiesHeader {
+	width: 100%;
+	margin-top: 4.1666666666667%;
+}
+
+table.facilitiesHeader th {
+	width: 50%;
+	font-size: 1.5em;
+	text-align: left;
 }
 
 .facilitiesPics {
-	width: 400px;
+	width: 50%; /* 400px/960px = 41.666666666667*/
 	float: left;
-	margin-top: 30px;
+	margin-top: 25px;
 }
 	
 .facilitiesPics li {
 	list-style-type: none;
 	float: left;
-	margin-left: 10px;
+	padding: .625em;
 }
 
 #equipment {
+	width: 50%;
 	float: left;
-	margin: 30px 0px 0px 90px;
+	margin: 3.125% 0% 0% 0%; /* 30px=3.125% 90px=9.375% */
 }
 
-table {
-	margin-top: 5px;
-}
-
-th {
+#equipment th {
 	text-align: left;
 }
 
-td {
+#equipment td {
 	padding: 10px;
+	margin-left: 10px;
 }
 
 footer {
 	clear: both;
-	margin: 40px 0px 40px 0px;
+	width: 100%;
+	margin: 4.1666666666667% 0% 4.1666666666667% 0%;
 }
 
 footer ul {
@@ -207,3 +227,87 @@ footer ul li {
 .clear {
 	clear: both;
 }
+
+/*--------------------------------Media Queries---------------------------*/
+
+	@media only screen and (min-width: 481px) and (max-width: 960px) {
+		header h1 {
+			font-size: 1.25em;
+		}
+		
+		header ul {
+			clear: both;
+			float: none;
+		}
+		
+		header ul li {
+			font: 1em 'Yeseva One', cursive;
+		}
+		
+		#splashImage {
+			height: 266px;
+		}
+		
+		#splashImage h1 {
+			font: 1.5em 'Yeseva One', cursive;
+		}
+		
+		#splashImage a {
+			font: .7em/2em 'Yeseva One', cursive;
+		}
+		
+		.cta {
+			width: 150px;
+			height: 2em;
+			margin: 30px 80px 0px 0px;
+		}
+		
+		#wrapper {
+			font-size: 1.05em;
+		}
+	}
+	
+	@media only screen and (max-width: 480px) {
+		
+		header {
+			min-height: 100%;
+		}
+		
+		header img {
+			float: none;
+		}
+		
+		header h1 {
+			float: none;
+		}
+		
+		header ul {
+			float: none;
+			clear: both;
+			width: 70%;
+			margin: 80px auto 0px auto;
+		}
+		
+		header ul li {
+			float: none;
+			display: block;
+			margin-bottom: 50px;
+			text-align: center;
+			background: green;
+			border-radius: 10px;
+		}
+		
+		#splashImage {
+			display: none;
+		}
+		
+		.who {
+			background: none;
+		}
+		
+		.columns {
+			column-count: 1;
+			-moz-column-count: 1;
+			-webkit-column-count: 1;
+		}
+	}
