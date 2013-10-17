@@ -141,6 +141,7 @@ header a:hover {
 	width: 80%;
 	margin: 0px auto;
 	font-size: 1.25em;
+	-webkit-text-size-adjust: 100%;
 }
 
 article {
@@ -154,7 +155,6 @@ article h2 {
 
 article p {
 	line-height: 1.3em;
-	text-align: justify;
 }
 
 .columns {
@@ -256,11 +256,9 @@ footer ul li {
 		
 		#wrapper {
 			font-size: 1.05em;
+			-webkit-text-size-adjust: 100%;
 		}
 		
-		article p {
-			text-align: left;
-		}
 	}
 	
 		@media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -292,11 +290,9 @@ footer ul li {
 		
 		#wrapper {
 			font-size: 1em;
+			-webkit-text-size-adjust: 100%;
 		}
 		
-		article p {
-			text-align: left;
-		}
 	}
 	
 	@media only screen and (max-width: 480px) {
