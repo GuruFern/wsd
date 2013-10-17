@@ -259,6 +259,10 @@ footer ul li {
 			-webkit-text-size-adjust: 100%;
 		}
 		
+		article .columns {
+			font-size: 1.05em;
+		}
+		
 	}
 	
 		@media only screen and (min-width: 481px) and (max-width: 767px) {
