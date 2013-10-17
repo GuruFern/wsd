@@ -4,36 +4,40 @@ html, body {
 }
 
 body {
-	margin: 0px;
-	padding: 0px;
+	margin: 0%;
+	padding: 0%;
 	background: url('../images/binding_dark.png') repeat;
 	color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6, ul {
-	margin: 0px;
-	padding: 0px;
+	margin: 0%;
+	padding: 0%;
 	font-family: 'Yeseva One' , cursive;
+}
+
+h2 {
+	color: #f78d1d;
 }
 
 header {
 	width: 90%;
 	margin: .625em auto .625em auto;
-	padding: 0px;
+	padding: 0%;
 	color: #fff;
 }
 
 header img {
 	float: left;
-	margin: 4px 0px 0px 15px;
+	margin: .3125em 0em 0em 0em;
 }
 
 header h1 {
 	float: left;
 	height: 50px;
 	line-height: 50px;
-	margin-left: 15px;
-	font-size: 1.4em;
+	margin-left: 2%;
+	font-size: 1.6em;
 }
 
 header ul {
@@ -42,7 +46,7 @@ header ul {
 }
 
 header ul li {
-	font: 1em 'Yeseva One', cursive;
+	font: 1.15em 'Yeseva One', cursive;
 	float: left;
 }
 
@@ -51,7 +55,7 @@ header a {
 	display: block;
 	height: 50px;
 	line-height: 50px;
-	padding: 0px 20px 0px 20px;
+	padding: 0px 10% 0px 10%;
 	color: #fff;
 }
 
@@ -64,7 +68,7 @@ header a:hover {
 	clear: both;
 	background: url(../images/c24UpClosev3.jpg) no-repeat;
 	height: 399px;
-	margin-top: 30px;
+	margin-top: 1.875em;
 }
 
 #splashImage h1 {
@@ -72,7 +76,7 @@ header a:hover {
 	text-shadow: 2px 2px #2F4F4F;
 	font: 2.5em 'Yeseva One', cursive;
 	float: right;
-	padding: 50px 50px 0px 0px;
+	padding: 5% 5% 0% 0%;
 }
 
 .cta  {
@@ -80,7 +84,7 @@ header a:hover {
 	float: right;
 	width: 300px;
 	height: 4em;
-	margin: 50px 100px 0px 0px;
+	margin: 5% 10% 0% 0%;
 }
 
 #splashImage a {
@@ -109,12 +113,12 @@ header a:hover {
 
 .button:active {
 	position: relative;
-	top: 1px;
+	top: .0625em;
 }
 
 .orange {
 	color: #fef4e9;
-	border: solid 1px #da7c0c;
+	border: solid .0625em #da7c0c;
 	background: #f78d1d;
 	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
 	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
@@ -153,14 +157,6 @@ article p {
 	text-align: justify;
 }
 
-.who {
-	background: #538018;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 157, 40, .7)), to(rgba(67, 107, 12, .7)));
-	background: -moz-linear-gradient(top,  rgba(107, 157, 40, .7),  rgba(67, 107, 12, .7));
-	border-radius: 1.5625em;
-	padding: 1.25em;
-}
-
 .columns {
 	margin-top: 3em;
 	column-count: 3;
@@ -171,21 +167,13 @@ article p {
 	-webkit-column-gap: 20px;
 }
 
-table.facilitiesHeader {
+#facilities {
 	width: 100%;
-	margin-top: 4.1666666666667%;
-}
-
-table.facilitiesHeader th {
-	width: 50%;
-	font-size: 1.5em;
-	text-align: left;
+	margin-top: 3em;
 }
 
 .facilitiesPics {
-	width: 50%; /* 400px/960px = 41.666666666667*/
-	float: left;
-	margin-top: 25px;
+	margin-top: 1.5625em;
 }
 	
 .facilitiesPics li {
@@ -195,33 +183,43 @@ table.facilitiesHeader th {
 }
 
 #equipment {
-	width: 50%;
+	width: 100%;
 	float: left;
-	margin: 3.125% 0% 0% 0%; /* 30px=3.125% 90px=9.375% */
+	margin-top: 3em;
+}
+
+#equipment table {
+	margin-top: 2em;
 }
 
 #equipment th {
 	text-align: left;
+	color: #538018;
 }
 
 #equipment td {
-	padding: 10px;
-	margin-left: 10px;
+	padding: 1em;
+	margin-left: 10%;
 }
 
 footer {
 	clear: both;
 	width: 100%;
-	margin: 4.1666666666667% 0% 4.1666666666667% 0%;
+	margin: 3em 0em;
+	background: #538018;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 157, 40, .7)), to(rgba(67, 107, 12, .7)));
+	background: -moz-linear-gradient(top,  rgba(107, 157, 40, .7),  rgba(67, 107, 12, .7));
+	border-radius: 1.5625em;
+	padding: 1.25em;
 }
 
 footer ul {
-	margin-top: 30px;
+	margin-top: 1.5em;
 	list-style-type: square;
 }
 
 footer ul li {
-	padding: 10px;
+	padding: .7em;
 }
 
 .clear {
@@ -230,14 +228,9 @@ footer ul li {
 
 /*--------------------------------Media Queries---------------------------*/
 
-	@media only screen and (min-width: 481px) and (max-width: 960px) {
+	@media only screen and (min-width: 768px) and (max-width: 960px) {
 		header h1 {
 			font-size: 1.25em;
-		}
-		
-		header ul {
-			clear: both;
-			float: none;
 		}
 		
 		header ul li {
@@ -259,11 +252,46 @@ footer ul li {
 		.cta {
 			width: 150px;
 			height: 2em;
-			margin: 30px 80px 0px 0px;
 		}
 		
 		#wrapper {
 			font-size: 1.05em;
+		}
+	}
+	
+		@media only screen and (min-width: 481px) and (max-width: 767px) {
+		
+		header h1 {
+			font-size: 1.1em;
+		}
+		
+		header ul li {
+			font: .75em 'Yeseva One', cursive;
+		}
+		
+		#splashImage {
+			height: 266px;
+		}
+		
+		#splashImage h1 {
+			font: 1.5em 'Yeseva One', cursive;
+		}
+		
+		#splashImage a {
+			font: .7em/2em 'Yeseva One', cursive;
+		}
+		
+		.cta {
+			width: 150px;
+			height: 2em;
+		}
+		
+		#wrapper {
+			font-size: 1em;
+		}
+		
+		article p {
+			text-align: left;
 		}
 	}
 	
@@ -274,17 +302,17 @@ footer ul li {
 		}
 		
 		header img {
-			float: none;
+			float: left;
 		}
 		
 		header h1 {
-			float: none;
+			float: left;
 		}
 		
 		header ul {
 			float: none;
 			clear: both;
-			width: 70%;
+			width: 80%;
 			margin: 80px auto 0px auto;
 		}
 		
@@ -293,7 +321,9 @@ footer ul li {
 			display: block;
 			margin-bottom: 50px;
 			text-align: center;
-			background: green;
+			background: #538018;
+			background: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 157, 40, 1)), to(rgba(67, 107, 12, 1)));
+			background: -moz-linear-gradient(top,  rgba(107, 157, 40, 1),  rgba(67, 107, 12, 1));
 			border-radius: 10px;
 		}
 		
@@ -310,4 +340,9 @@ footer ul li {
 			-moz-column-count: 1;
 			-webkit-column-count: 1;
 		}
+		
+		.facilitiesHeader {
+			display: none;
+		}
+		
 	}
