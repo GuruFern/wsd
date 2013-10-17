@@ -206,20 +206,29 @@ footer {
 	clear: both;
 	width: 100%;
 	margin: 3em 0em;
-	background: #538018;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 157, 40, .7)), to(rgba(67, 107, 12, .7)));
-	background: -moz-linear-gradient(top,  rgba(107, 157, 40, .7),  rgba(67, 107, 12, .7));
-	border-radius: 1.5625em;
-	padding: 1.25em;
 }
 
 footer ul {
 	margin-top: 1.5em;
-	list-style-type: square;
+	list-style-type: none;
 }
 
 footer ul li {
-	padding: .7em;
+	background: #538018;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 157, 40, .7)), to(rgba(67, 107, 12, .7)));
+	background: -moz-linear-gradient(top,  rgba(107, 157, 40, .7),  rgba(67, 107, 12, .7));
+	border-radius: .625em;
+	padding: 1.25em;
+	margin-top: 2em;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #f78d1d;
 }
 
 .clear {
