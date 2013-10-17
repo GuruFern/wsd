@@ -257,6 +257,10 @@ footer ul li {
 		#wrapper {
 			font-size: 1.05em;
 		}
+		
+		article p {
+			text-align: left;
+		}
 	}
 	
 		@media only screen and (min-width: 481px) and (max-width: 767px) {
