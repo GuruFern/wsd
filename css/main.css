@@ -241,7 +241,7 @@ form {
 	background: -moz-linear-gradient(top,  rgba(107, 157, 40, .7),  rgba(67, 107, 12, .7));
 	border-radius: .625em;
 	padding: 1em;
-	font: 1em 'Yeseva One', cursive;
+	font: 1.05em 'Yeseva One', cursive;
 }
 
 .alternate {
@@ -261,8 +261,17 @@ input {
 
 textarea {
 	display: block;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	width: 100%;
+}
+
+select {
+	padding: .6em;
+	margin-top: 1em;
+}
+
+.submit {
+	margin-top: 1.5em;
 }
 
 .clear {
@@ -303,6 +312,10 @@ textarea {
 		
 		article .columns {
 			font-size: 1.05em;
+		}
+		
+		footer {
+			font-size: 1em;
 		}
 		
 	}
@@ -396,7 +409,9 @@ textarea {
 			font-size: .8em;
 		}
 		
-		footer a {
+		footer {
 			font-size: .78em;
 		}
+		
+		
 	}
